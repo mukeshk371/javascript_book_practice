@@ -1,0 +1,81 @@
+body {
+    font: 14px arial;
+    text-align: center;
+}
+
+.frame {
+    width: 50%;
+}
+
+.header {
+    font: 16px arial;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2, p {
+    float: center;
+}
+
+p {
+    font-style: italic;
+}
+
+.left,
+.picture {
+    float: left;
+    width: 50%;
+}
+
+.left img {
+    height: 100px;
+}
+
+.picture img {
+    height: 200px;
+} 
+
+div.field {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         HOUSE SHOWCASE                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+li {
+    list-style: none;
+    width: 24%;
+    background-color: #f4f4f4;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.house-photo {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.house-photo img {
+    width: 100%;
+}
+
+.selectButton {
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}

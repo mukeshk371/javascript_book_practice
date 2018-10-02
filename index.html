@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaScript Book Practice</title>
+    <link rel="icon" type="image/png" href="resources/images/icon.png">
+    <link rel="stylesheet" type="text/css" href="resources/css/page_style.css">
+    <script type="text/javascript" src="resources/js/javascript_practice.js"></script>
+    <script type="text/javascript" src="resources/js/data.js"></script>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="header">
+            <h2>Ready to find new house</h2>
+        </div>
+        <div class="left">
+            <img src="resources/images/house.png" alt="house">
+        </div>
+        <form name="orderForm" method="POST">
+            <div class="field">Enter your annual income :
+                <input id="income" type="text" size="12" name="inputIncome" >
+            </div>
+            <div class="field">Enter the number of bedrooms :
+                <input id="bedrooms" type="text" size="9" name="inputBedrooms" >
+            </div>
+            <div class="field">Enter your ZIP code:
+                <input id="zip" type="text" size="10" name="inputZip">
+            </div>
+            <br>
+            <input type="button" value="Calculate Price" onclick="calculatePrice()">
+            <input type="button" value="Shop for Houses" onclick="showRequiredArray()">
+        </form>
+    </div>
+    <br>
+    
+    <div class="houses" align="center">
+        <ul class="house-list" id="house-shocase">
+            
+        </ul>
+    </div>
+    
+
+    <div class="frame">
+        <div class="header">
+            <h2>Duncan's Just-In-Time Donuts</h2>
+            <p>All Donuts ₹80 each, cake or glazed</p>
+        </div>
+        <div class="picture">
+            <img src="resources/images/timer.png" alt="timer">
+        </div>
+        <form name="orderform" method="POST">
+            <div class="field">Name :
+                <input type="text" id="name" name="name" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field"># of cake donuts :
+                <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field"># of glazed donuts :
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field">Minutes til :
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field">Subtotal :
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field">Tax :
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field">Total :
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+            </div>
+            <div class="field">
+                <input type="button" value="Place Order" onclick="placeOrder(this.form);" />
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>
