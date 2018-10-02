@@ -30,7 +30,13 @@ function createLi(information) {
     buttonLink.setAttribute("href", "#");
     buttonLink.appendChild(selectButton);
 
-    var flatPrice = document.createElement("H3");
+    var zipCode = document.createElement("P");
+    zipCode.innerHTML = "Pin Code : " + information.zip;
+
+    var cityName = document.createElement("H3");
+    cityName.innerHTML = information.city;
+
+    var flatPrice = document.createElement("H2");
     flatPrice.innerHTML = information.price;
 
     var flatImage = document.createElement("IMG");
@@ -47,6 +53,8 @@ function createLi(information) {
     list.appendChild(heading);
     list.appendChild(figure);
     list.appendChild(flatPrice);
+    list.appendChild(cityName);
+    list.appendChild(zipCode);
     list.appendChild(buttonLink);
 
     return list;
@@ -57,11 +65,11 @@ function filterHouseList() {
     for(var i = 0; i < houseList.length; i++) {
         var inputBedrooms = document.getElementById("bedrooms").value;
         var inputZip = document.getElementById("zip").value;
-        if (houseList[i].bedrooms == inputBedrooms) {
+        if (houseList[i].bedrooms == inputBedrooms && houseList[i].zip == inputZip) {
             requiredArray.push(houseList[i]);
         }
-        else if (houseList[i].zip == inputZip) {
-            requiredArray.push(houseList[i]);
+        else if (inputBedrooms == "" && inputZip == "") {
+            return houseList;
         }
     }
     return requiredArray;

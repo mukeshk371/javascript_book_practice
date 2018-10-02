@@ -79,3 +79,7 @@ li {
     color: #000;
     cursor: pointer;
 }
+
+h3 {
+    font-style: italic;
+}
