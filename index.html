@@ -18,18 +18,19 @@
             <img src="resources/images/house.png" alt="house">
         </div>
         <form name="orderForm" method="POST">
-            <div class="field">Enter your annual income :
-                <input id="income" type="text" size="12" name="inputIncome" >
+            <div class="field">Enter Flat Price :
+                <input id="price" type="text" size="12" name="price">
             </div>
             <div class="field">Enter the number of bedrooms :
-                <input id="bedrooms" type="text" size="9" name="inputBedrooms" >
+                <input id="bedrooms" type="text" size="9" name="inputBedrooms">
             </div>
             <div class="field">Enter your ZIP code:
                 <input id="zip" type="text" size="10" name="inputZip">
             </div>
-            <br>
-            <input type="button" value="Calculate Price" onclick="calculatePrice()">
-            <input type="button" value="Shop for Houses" onclick="showRequiredArray()">
+            <!--<input type="button" value="Calculate Price" onclick="calculatePrice()">-->
+            <div class="field">
+                <input type="button" value="Search Houses" align="right" onclick="showRequiredArray()">
+            </div>
         </form>
     </div>
     <br>
@@ -51,30 +52,31 @@
         </div>
         <form name="orderform" method="POST">
             <div class="field">Name :
-                <input type="text" id="name" name="name" value="" onchange="updateOrder();" />
+                <input type="text" id="name" name="name" value="">
             </div>
             <div class="field"># of cake donuts :
-                <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder()">
             </div>
             <div class="field"># of glazed donuts :
-                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder()">
             </div>
             <div class="field">Minutes til :
-                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="minutestil" name="glazeddonuts" value="">
             </div>
             <div class="field">Subtotal :
-                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="subtotal" name="glazeddonuts" value="">
             </div>
             <div class="field">Tax :
-                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="tax" name="glazeddonuts" value="">
             </div>
             <div class="field">Total :
-                <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();" />
+                <input type="text" id="total" name="glazeddonuts" value="">
             </div>
             <div class="field">
-                <input type="button" value="Place Order" onclick="placeOrder(this.form);" />
+                <input type="button" value="Place Order" onclick="placeOrder()" />
             </div>
         </form>
+        <p id="orderDetails"></p>
     </div>
     
 </body>
